@@ -11,10 +11,28 @@
 	<div class="main" data-bind="foreach: model.mainSect">
 		<div class="main" data-bind="style: {background: backImg, backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}">
 			<div class="main shade">
-				<h1 data-bind="text: header"></h1>
+				<h1 class="header" data-bind="text: header"></h1>
+				<div class="head-img-div">
+					<img class="left head-img" src="img/beth-head.jpg">
+					<img class="both head-img" src="img/both.jpg">
+					<img class="right head-img" src="img/drew-head.jpg">
+
+				</div>
 			</div>
 		</div>
-		
+	</div>
+	<div data-bind="foreach: model.ceremony">
+		<ul class="ceremony-ul">
+			<li data-bind="text: header"></li>
+			<li>
+				<a target="_blank" data-bind="attr: {href: url}, text: subHead"></a>
+			</li>
+			<li data-bind="text: location"></li>
+
+		</ul>
+	</div>
+	<div>
+
 	</div>
 	<script src="js/lib/knockout-3.4.0.js"></script>
 	<script src="js/lib/jquery-1.12.4.min.js"></script>
