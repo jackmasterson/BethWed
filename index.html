@@ -6,18 +6,18 @@
 	<meta name="viewport" content = "width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<div class="shade" data-bind="foreach: model.mainSect">
+		<h2 class="nav-head" data-bind="text: sect"></h2>
+	</div>
+	<div class="shade-two"></div>
+	<div class="head-div"></div>
 	<div class="main" data-bind="foreach: model.mainSect">
 		<div class="main" data-bind="style: {background: backImg, backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}">
 			<div class="main shade">
 				<h1 class="header" data-bind="text: header"></h1>
-				<div class="head-img-div">
-					<img class="left head-img" src="img/beth-head.jpg">
-					<img class="both head-img" src="img/both.jpg">
-					<img class="right head-img" src="img/drew-head.jpg">
-
-				</div>
 			</div>
 		</div>
 	</div>
@@ -36,6 +36,7 @@
 	</div>
 	<script src="js/lib/knockout-3.4.0.js"></script>
 	<script src="js/lib/jquery-1.12.4.min.js"></script>
+	  <script src="js/lib/chocolate/jquery.chocolate.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
