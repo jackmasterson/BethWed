@@ -19,21 +19,21 @@
 	<div class="head-div" class="home"></div>
 	<div data-bind="foreach: model.mainSect">
 		<div class="main" data-bind="style: {background: backImg, backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}, attr: { id: divID }">
-			<h1 class="sub header" data-bind="text: header"></h1>
-			<div class="gen-info-div" data-bind="foreach: ceremony">
+			
+			<div class="gen-info-div shade-three">
+				<h1 class="sub header" data-bind="text: header"></h1>
+				<div data-bind="foreach: ceremony">
 				<ul class="ceremony-ul" data-bind="attr: { id: id }">
 					<li data-bind="text: header"></li>
 					<li>
 						<a target="_blank" data-bind="attr: {href: url}, text: subHead"></a>
 					</li>
 					<li data-bind="text: location"></li>
-
 				</ul>
 			</div>
-		</div>
-	</div>
-	<div>
 
+			</div>
+		</div>
 	</div>
 	<script src="js/lib/knockout-3.4.0.js"></script>
 	<script src="js/lib/jquery-1.12.4.min.js"></script>
