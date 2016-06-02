@@ -9,29 +9,34 @@
 	<link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="shade" data-bind="foreach: model.mainSect">
-		<h2 class="nav-head" data-bind="text: sect, click: toggle.nav"></h2>
+	<div class="shade">
+		<div data-bind="foreach: model.mainSect">
+			<h2 class="nav-head">
+				<a data-bind="text: sect, click: toggle.nav"></a>
+			</h2>
+		</div>
+		<h2 class="nav-head">
+			<a class="nav-a" href="#top">Top</a>
+		</h2>
 	</div>
-	<div class="shade-two">
+	<div class="shade-two top">
 		<h1 class="header">Beth Masterson and Andrew Knapp</h1>
 		<h3 class="header deets">December 31, 2016</h3>
 	</div>
 	<div class="head-div" class="home"></div>
 	<div data-bind="foreach: model.mainSect">
 		<div class="main" data-bind="style: {background: backImg, backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}, attr: { id: divID }">
-			
 			<div class="gen-info-div shade-three">
 				<h1 class="sub header" data-bind="text: header"></h1>
-				<div data-bind="foreach: ceremony">
-				<ul class="ceremony-ul" data-bind="attr: { id: id }">
-					<li data-bind="text: header"></li>
-					<li>
-						<a target="_blank" data-bind="attr: {href: url}, text: subHead"></a>
-					</li>
-					<li data-bind="text: location"></li>
-				</ul>
-			</div>
-
+				<div class="sub-gen-div" data-bind="foreach: ceremony">
+					<ul class="ceremony-ul" data-bind="attr: { id: id }">
+						<li data-bind="text: header"></li>
+						<li>
+							<a target="_blank" data-bind="attr: {href: url}, text: subHead"></a>
+						</li>
+						<li data-bind="text: location"></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

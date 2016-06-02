@@ -2,7 +2,7 @@
 
 var model = {
 	mainSect: [
-		{
+	/*	{
 			sect: 'Home',
 			header: 'Beth Masterson and Andrew Knapp',
 			backImg: 'url(..//Beth/img/flowers.jpeg)',
@@ -16,7 +16,7 @@ var model = {
 					id: 'home-ul-id'
 				}
 			]
-		},
+		},*/
 		{
 			sect: 'Details',
 			header: 'Ceremony and Reception Details',
@@ -75,12 +75,12 @@ var model = {
 
 var viewModel = {
 	init: function() {
-		picSwap();
+	//	picSwap();
 		slider.init();
 	}
 };
 
-function picSwap () {
+/*function picSwap () {
   $( ".left" ).animate({
     opacity: 0.75,
     height: "toggle"
@@ -90,7 +90,7 @@ function picSwap () {
   	$(".both").fadeIn(1200); 
   })
 
-};
+};*/
 
 /**** slider credit goes to kentowatanabe, found at: 
  	[http://www.jqueryscript.net/demo/Simplest-Fullscreen
@@ -109,19 +109,14 @@ var slider = {
 
 var toggle = {
 	nav: function(clicked) {
-		console.log(clicked);
-	//	console.log(clicked);
-		$('.main').hide();
-		//$('.explain').hide();
-		//$('.scroll-up').show();
-		//$('.port-nav-img-div').hide();
-	//	$('#collapseThree').fadeIn();
 		var classed = "#" + clicked.divID;
-		console.log(classed);
-
-	//	console.log(this);
-		//console.log(this);
+		console.log(clicked);
+		$('.main').hide();
 		$(classed).fadeIn('slow', function(){});
+
+		$('html, body').animate({
+	        scrollTop: $(classed).offset().top
+	    }, 800);
 	}
 }
 

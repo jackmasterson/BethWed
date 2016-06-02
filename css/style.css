@@ -8,13 +8,22 @@ ul {
 	list-style-type: none;
 }
 
+a {
+	color: #ccc;
+	cursor: pointer;
+}
+
+.nav-a {
+	text-decoration: none;
+}
+
 .main {
 	height: 100vh;
 	width: 100vw;
 }
 
 .shade {
-	position: absolute;
+	position: fixed;
 	background-color: rgba(0,0,0,0.5);
 	z-index: 5;
 	height: 100vh;
@@ -27,13 +36,14 @@ ul {
 	z-index: 4;
 	height: 100vh;
 	width: 100vw;
+	padding-left: 10vw;
 }
 
 .shade-three {
-
 	background-color: rgba(0,0,0,0.6);
 	height: 100vh;
 	width: 100vw;
+	padding-left: 15vw;
 }
 
 .header {
@@ -42,13 +52,12 @@ ul {
 	font-size: 40px;
 	font-family: 'Petit Formal Script', cursive;
 	padding-top: 5vh;
-	margin-left: 10vw;
 }
 
 .sub {
 	margin-left: 0;
-	padding-top: 2vh;
-	padding-bottom: 2vh;
+	padding-right: 15vw;
+	padding-top: 3vh;
 }
 
 .deets {
@@ -77,9 +86,11 @@ ul {
 	font-size: 30px;
 	color: white;
 	float: left;
-
 }
 
+.sub-gen-div {
+	margin-top: 20vh;
+}
 
 .head-img-div {
 	margin-top: 20vh;
