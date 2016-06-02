@@ -117,6 +117,14 @@ var toggle = {
 		$('html, body').animate({
 	        scrollTop: $(classed).offset().top
 	    }, 800);
+	},
+
+	top: function(clicked) {
+		$('.show').fadeIn();
+		$('html, body').animate({
+	        scrollTop: $(".top").offset().top
+	    }, 800);
+	   // $(".main").hide();
 	}
 }
 

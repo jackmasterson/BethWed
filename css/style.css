@@ -20,6 +20,11 @@ a {
 .main {
 	height: 100vh;
 	width: 100vw;
+	display: none;
+}
+
+.show {
+	display: block;
 }
 
 .shade {
@@ -64,9 +69,6 @@ a {
 	margin-top: 65vh;
 }
 
-.main {
-	display: none;
-}
 
 .head-div {
 	background: no-repeat fixed;
