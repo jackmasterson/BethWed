@@ -19,11 +19,9 @@
 	<div class="head-div" class="home"></div>
 	<div data-bind="foreach: model.mainSect">
 		<div class="main" data-bind="style: {background: backImg, backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}, attr: { id: divID }">
-			<div class="shade-three">
-				<h1 class="sub header" data-bind="text: header"></h1>
-			</div>
+			<h1 class="sub header" data-bind="text: header"></h1>
 			<div class="gen-info-div" data-bind="foreach: ceremony">
-				<ul class="ceremony-ul">
+				<ul class="ceremony-ul" data-bind="attr: { id: id }">
 					<li data-bind="text: header"></li>
 					<li>
 						<a target="_blank" data-bind="attr: {href: url}, text: subHead"></a>

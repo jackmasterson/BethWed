@@ -2,12 +2,21 @@
 
 var model = {
 	mainSect: [
-		/*{
+		{
 			sect: 'Home',
 			header: 'Beth Masterson and Andrew Knapp',
 			backImg: 'url(..//Beth/img/flowers.jpeg)',
-			divID: 'home'
-		},*/
+			divID: 'home',
+			ceremony: [
+				{
+					header: 'December 31, 2016',
+					subHead: '',
+					location: '',
+					url: '',
+					id: 'home-ul-id'
+				}
+			]
+		},
 		{
 			sect: 'Details',
 			header: 'Ceremony and Reception Details',
@@ -18,13 +27,15 @@ var model = {
 					header: "Ceremony",
 					subHead: "St. Mark's Church",
 					location: "Sea Girt, NJ 08750",
-					url: "google.com/maps"
+					url: "google.com/maps",
+					id: 'ceremony-ul-id'
 				},
 				{
 					header: "Reception",
 					subHead: "Spring Lake Bath & Tennis Club",
 					location: "Spring Lake, NJ 07762",
-					url: "google.com/maps"
+					url: "google.com/maps",
+					id: 'ceremony-ul-id'
 				}
 			]
 		},
@@ -38,19 +49,22 @@ var model = {
 					header: "Essex Hotel",
 					subHead: "(908) 908 9089",
 					location: "Sea Girt, NJ 08750",
-					url: "google.com/maps"
+					url: "google.com/maps",
+					id: 'hotels-ul-id'
 				},
 				{
 					header: "Sussex Hotel",
 					subHead: "(809) 809 9809",
 					location: "Spring Lake, NJ 07762",
-					url: "google.com/maps"
+					url: "google.com/maps",
+					id: 'hotels-ul-id'
 				},
 				{
 					header: "Morrison Hotel",
 					subHead: "(433) 908 43333",
 					location: "Avon, NJ 07762",
-					url: "google.com/maps"
+					url: "google.com/maps",
+					id: 'hotels-ul-id'
 				}
 			]
 		}	

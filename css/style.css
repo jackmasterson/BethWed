@@ -76,6 +76,7 @@ ul {
 	padding: 25vh;
 	font-size: 30px;
 	color: white;
+	float: left;
 }
 
 
@@ -101,6 +102,12 @@ ul {
 }
 
 .ceremony-ul {
-	width: 45vw;
+	width: 20vw;
 	float: left;
+	margin-bottom: 5vh;
 }
+
+#ceremony-ul-id {
+	margin: 15vh;
+}
+
