@@ -2,37 +2,61 @@
 
 var model = {
 	mainSect: [
-		{
+		/*{
 			sect: 'Home',
 			header: 'Beth Masterson and Andrew Knapp',
-			backImg: 'url(..//Beth/img/flowers.jpeg)'
-		},
+			backImg: 'url(..//Beth/img/flowers.jpeg)',
+			divID: 'home'
+		},*/
 		{
 			sect: 'Details',
 			header: 'Ceremony and Reception Details',
-			backImg: 'url(..//Beth/img/bride.jpg)'
+			backImg: 'url(..//Beth/img/bride.jpg)',
+			divID: 'details',
+			ceremony: [
+				{
+					header: "Ceremony",
+					subHead: "St. Mark's Church",
+					location: "Sea Girt, NJ 08750",
+					url: "google.com/maps"
+				},
+				{
+					header: "Reception",
+					subHead: "Spring Lake Bath & Tennis Club",
+					location: "Spring Lake, NJ 07762",
+					url: "google.com/maps"
+				}
+			]
 		},
 		{
 			sect: 'Hotels',
 			header: 'Hotel Information',
-			backImg: 'url(..//Beth/img/hotel.jpeg)'
+			backImg: 'url(..//Beth/img/hotel.jpeg)',
+			divID: 'hotels',
+			ceremony: [
+				{
+					header: "Essex Hotel",
+					subHead: "(908) 908 9089",
+					location: "Sea Girt, NJ 08750",
+					url: "google.com/maps"
+				},
+				{
+					header: "Sussex Hotel",
+					subHead: "(809) 809 9809",
+					location: "Spring Lake, NJ 07762",
+					url: "google.com/maps"
+				},
+				{
+					header: "Morrison Hotel",
+					subHead: "(433) 908 43333",
+					location: "Avon, NJ 07762",
+					url: "google.com/maps"
+				}
+			]
 		}	
 	],
 
-	ceremony: [
-		{
-			header: "Ceremony",
-			subHead: "St. Mark's Church",
-			location: "Sea Girt, NJ 08750",
-			url: "google.com/maps"
-		},
-		{
-			header: "Reception",
-			subHead: "Spring Lake Bath & Tennis Club",
-			location: "Spring Lake, NJ 07762",
-			url: "google.com/maps"
-		}
-	]
+
 };
 
 var viewModel = {
@@ -68,6 +92,24 @@ var slider = {
 		});
 	}
 };
+
+var toggle = {
+	nav: function(clicked) {
+		console.log(clicked);
+	//	console.log(clicked);
+		$('.main').hide();
+		//$('.explain').hide();
+		//$('.scroll-up').show();
+		//$('.port-nav-img-div').hide();
+	//	$('#collapseThree').fadeIn();
+		var classed = "#" + clicked.divID;
+		console.log(classed);
+
+	//	console.log(this);
+		//console.log(this);
+		$(classed).fadeIn('slow', function(){});
+	}
+}
 
 ko.applyBindings(viewModel.init());
 

@@ -10,26 +10,29 @@
 </head>
 <body>
 	<div class="shade" data-bind="foreach: model.mainSect">
-		<h2 class="nav-head" data-bind="text: sect"></h2>
+		<h2 class="nav-head" data-bind="text: sect, click: toggle.nav"></h2>
 	</div>
-	<div class="shade-two"></div>
-	<div class="head-div"></div>
-	<div class="main" data-bind="foreach: model.mainSect">
-		<div class="main" data-bind="style: {background: backImg, backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}">
-			<div class="main shade">
-				<h1 class="header" data-bind="text: header"></h1>
+	<div class="shade-two">
+		<h1 class="header">Beth Masterson and Andrew Knapp</h1>
+		<h3 class="header deets">December 31, 2016</h3>
+	</div>
+	<div class="head-div" class="home"></div>
+	<div data-bind="foreach: model.mainSect">
+		<div class="main" data-bind="style: {background: backImg, backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}, attr: { id: divID }">
+			<div class="shade-three">
+				<h1 class="sub header" data-bind="text: header"></h1>
+			</div>
+			<div class="gen-info-div" data-bind="foreach: ceremony">
+				<ul class="ceremony-ul">
+					<li data-bind="text: header"></li>
+					<li>
+						<a target="_blank" data-bind="attr: {href: url}, text: subHead"></a>
+					</li>
+					<li data-bind="text: location"></li>
+
+				</ul>
 			</div>
 		</div>
-	</div>
-	<div data-bind="foreach: model.ceremony">
-		<ul class="ceremony-ul">
-			<li data-bind="text: header"></li>
-			<li>
-				<a target="_blank" data-bind="attr: {href: url}, text: subHead"></a>
-			</li>
-			<li data-bind="text: location"></li>
-
-		</ul>
 	</div>
 	<div>
 
