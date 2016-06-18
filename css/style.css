@@ -1,5 +1,6 @@
 * {
 	text-align: center;
+	vertical-align: middle;
 	margin: 0;
 }
 
@@ -9,119 +10,58 @@ ul {
 }
 
 a {
-	color: #ccc;
+	color: black;
 	cursor: pointer;
 }
 
-.nav-a {
-	text-decoration: none;
+h1 {
+	font-family: 'League Script', cursive;
 }
 
-.main {
+.splash {
 	height: 100vh;
 	width: 100vw;
-	display: none;
 }
 
-.show {
-	display: block;
+.pic-main {
+	height: 80vh;
+	width: 65vw;
+	border: 1px solid black;
+	margin-top: 10vh;
 }
 
-.shade {
+.info-each {
+	margin-bottom: 10vh;
+}
+
+.info-data {
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+.info {
+	height: 200vh;
+	width: 100vw;
+}
+
+.nav {
 	position: fixed;
-	background-color: rgba(0,0,0,0.5);
 	z-index: 5;
-	height: 100vh;
-	width: 20vw;
-}
-
-.shade-two {
-	position: absolute;
-	background-color: rgba(0,0,0,0.6);
-	z-index: 4;
-	height: 100vh;
+	height: 7vh;
 	width: 100vw;
-	padding-left: 10vw;
-}
-
-.shade-three {
-	background-color: rgba(0,0,0,0.6);
-	height: 100vh;
-	width: 100vw;
-	padding-left: 15vw;
-}
-
-.header {
-	width: 100vw;
-	color: white;
-	font-size: 40px;
+	background-color: white;
+	color: black;
 	font-family: 'Petit Formal Script', cursive;
-	padding-top: 5vh;
+	border-bottom: 1px solid black;
 }
 
-.sub {
+.nav-ul {
+	padding-left: 0;
 	margin-left: 0;
-	padding-right: 15vw;
-	padding-top: 3vh;
 }
 
-.deets {
-	margin-top: 65vh;
-}
-
-
-.head-div {
-	background: no-repeat fixed;
-	background-size: cover;
-	min-height: 100vh;
-	min-width: 100vw;
-	z-index: 4;
-}
-
-.nav-head {
-	color: white;
-	font-family: 'Petit Formal Script', cursive;
-	margin-top: 18vh;
-}
-
-.gen-info-div {
-	font-size: 30px;
-	color: white;
-	float: left;
-}
-
-.sub-gen-div {
-	margin-top: 20vh;
-}
-
-.head-img-div {
-	margin-top: 20vh;
-	margin-right: 8vw;
-}
-
-.head-img {
-	height: 250px;
-	width: 180px;
-	margin-left: 8vw;
-}
-
-.left {
+.nav-li {
 	display: inline-block;
+	margin: 1vh 3vw 1vh 3vw;
+	font-size: 20px;
 }
-
-.both {
-	display: none;
-	height: 300px;
-	width: 250px;
-}
-
-.ceremony-ul {
-	width: 30vw;
-	float: left;
-	margin-bottom: 5vh;
-}
-
-#ceremony-ul-id {
-	margin-left: 8vw;
-}
-

@@ -9,39 +9,30 @@
 	<link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="shade">
-		<div data-bind="foreach: model.mainSect">
-			<h2 class="nav-head">
-				<a data-bind="text: sect, click: toggle.nav"></a>
-			</h2>
-		</div>
-		<h2 class="nav-head">
-			<a class="nav-a" data-bind="click: toggle.top">Home</a>
-		</h2>
+	<div class="nav">
+		<ul class="nav-ul">
+			<li class="nav-li">Wedding</li>
+			<li class="nav-li">Accommodations</li>
+			<li class="nav-li">Airports</li>
+			<li class="nav-li">Things to Do</li>
+		</ul>
 	</div>
-	<div class="shade-two">
-		<div class="top main show">
-		<h1 class="header">Beth Masterson and Andrew Knapp</h1>
-		<h3 class="header deets">December 31, 2016</h3>
+	<div class="splash">
+		<img class="pic-main" src="img/hawaii.jpg">
 	</div>
-	</div>
-	<div class="head-div" class="home"></div>
-	<div data-bind="foreach: model.mainSect">
-		<div class="main" data-bind="style: {background: backImg, backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}, attr: { id: divID }">
-			<div class="gen-info-div shade-three">
-				<h1 class="sub header" data-bind="text: header"></h1>
-				<div class="sub-gen-div" data-bind="foreach: ceremony">
-					<ul class="ceremony-ul" data-bind="attr: { id: id }">
-						<li data-bind="text: header"></li>
-						<li>
-							<a target="_blank" data-bind="attr: {href: url}, text: subHead"></a>
-						</li>
-						<li data-bind="text: location"></li>
-					</ul>
-				</div>
+	<div class="info" data-bind="foreach: model.weddingInfo">
+		<div class="info-each">
+			<h1 data-bind="text: header"></h1>
+			<h2 class="info-data" data-bind="text: location"></h2>
+			<h2 class="info-data" data-bind="text: address"></h2>
+			<div data-bind="if: directions">
+				<h3 class="info-data">
+					<a target="_blank" data-bind="attr: {href: directions.href}, text: directions.text"></a>
+				</h3>
 			</div>
 		</div>
 	</div>
+
 	<script src="js/lib/knockout-3.4.0.js"></script>
 	<script src="js/lib/jquery-1.12.4.min.js"></script>
 	  <script src="js/lib/chocolate/jquery.chocolate.js"></script>

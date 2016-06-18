@@ -1,6 +1,35 @@
 'use strict';
 
 var model = {
+	weddingInfo: [
+		{
+			header: 'The Wedding',
+			location: 'December 31, 2016',
+			address: '2:00pm',
+			directions: ko.observable(false)
+		},
+		{
+			header: "The Church",
+			location: "St. Mark's Catholic Church",
+			address: "215 Crescent Parkway, Sea Girt, NJ 08750",
+			directions: ko.observable(false)
+		},
+		{
+			header: "The Ceremony",
+			location: "TBD",
+			address: "514 Sunset Drive, Downingtown, PA",
+			directions: {
+				text: "Directions",
+				href: "https://www.google.com/maps/dir/"+
+					"/Crystal+Point+Inn,+3900+River+Rd,+Point+Pleasant,+NJ"+
+					"+08742/@40.0954926,-74.0891644,17z/data=!4m16!1m7!3m6!1"+
+					"s0x89c18682b7849b41:0x9fe4461d1758c521!2sCrystal+Point+Inn!"+
+					"3b1!8m2!3d40.0954926!4d-74.0869757!4m7!1m0!1m5!1m1!1s0x"+
+					"89c18682b7849b41:0x9fe4461d1758c521!2m2!1d-74.0869757"+
+					"!2d40.0954926"
+				}
+		}
+	],
 	mainSect: [
 	/*	{
 			sect: 'Home',
@@ -76,7 +105,7 @@ var model = {
 var viewModel = {
 	init: function() {
 	//	picSwap();
-		slider.init();
+	//	slider.init();
 	}
 };
 
@@ -96,16 +125,7 @@ var viewModel = {
  	[http://www.jqueryscript.net/demo/Simplest-Fullscreen
  		-Background-Slideshow-With-jQuery-Chocolate-js/]
  ****/
-var slider = {
-	
-	init: function() {
-		$('.head-div').chocolate({
-			images    : ['img/both.jpg', 'img/both-two.jpg', 'img/both-four.jpg'],
-			interval : 3500,
-			speed: 1000
-		});
-	}
-};
+
 
 var toggle = {
 	nav: function(clicked) {
