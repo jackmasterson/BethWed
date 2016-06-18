@@ -114,6 +114,17 @@ var counter = {
 	init: function(){
 		var count = document.getElementsByClassName('counter')[0];
 		console.log(count);
+		console.log(count.innerHTML);
+		var days = 197;
+		
+		function daysLeft() {
+			return --days;
+		}
+		count.innerHTML = daysLeft();
+		//daysLeft();
+
+	//	days = daysLeft;
+
 	}
 };
 
