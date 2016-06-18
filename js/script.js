@@ -106,8 +106,17 @@ var viewModel = {
 	init: function() {
 	//	picSwap();
 	//	slider.init();
+		counter.init();
 	}
 };
+
+var counter = {
+	init: function(){
+		var count = document.getElementsByClassName('counter')[0];
+		console.log(count);
+	}
+};
+
 
 /*function picSwap () {
   $( ".left" ).animate({

@@ -19,17 +19,19 @@
 	</div>
 	<div class="splash">
 		<img class="pic-main" src="img/hawaii.jpg">
+		<h1 class="couple">Beth and Andrew!</h1>
+		<h3 class="counter-head">Only <span class="counter"></span> Days until the Big Day!</h3>
 	</div>
 	<div class="info" data-bind="foreach: model.weddingInfo">
-		<div class="info-each">
-			<h1 data-bind="text: header"></h1>
-			<h2 class="info-data" data-bind="text: location"></h2>
-			<h2 class="info-data" data-bind="text: address"></h2>
-			<div data-bind="if: directions">
+		<ul class="info-each">
+			<li class="info-header" data-bind="text: header"></li>
+			<li class="info-data" data-bind="text: location"></li>
+			<li class="info-data" data-bind="text: address"></li>
+			<li data-bind="if: directions">
 				<h3 class="info-data">
 					<a target="_blank" data-bind="attr: {href: directions.href}, text: directions.text"></a>
 				</h3>
-			</div>
+			</li>
 		</div>
 	</div>
 
