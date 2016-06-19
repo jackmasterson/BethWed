@@ -19,27 +19,31 @@
 		<h1 class="couple">Beth and Andrew!</h1>
 		<h3 class="counter-head">Only <span class="counter"></span> Days until the Big Day!</h3>
 	</div>
-	<div>
-		<ul data-bind="foreach: model.weddingInfo" class="all info-each info">
-			<li class="info-header" data-bind="text: header"></li>
-			<li class="info-data" data-bind="text: location"></li>
-			<li class="info-data" data-bind="text: address"></li>
-			<li data-bind="if: directions">
-				<h3 class="info-data">
-					<a target="_blank" data-bind="attr: {href: directions.href}, text: directions.text"></a>
-				</h3>
-			</li>
-		</ul>
-		<ul data-bind="foreach: model.acommodationsInfo" class="all info-each accommodations">
-			<li class="info-header" data-bind="text: header"></li>
-			<li class="info-data" data-bind="text: location"></li>
-			<li class="info-data" data-bind="text: address"></li>
-			<li data-bind="if: directions">
-				<h3 class="info-data">
-					<a target="_blank" data-bind="attr: {href: directions.href}, text: directions.text"></a>
-				</h3>
-			</li>
-		</ul>
+	<div class="rest">
+		<div data-bind="foreach: model.weddingInfo" class="all info-each info">
+			<ul class="all info-each info">
+				<li class="info-header" data-bind="text: header"></li>
+				<li class="info-data" data-bind="text: location"></li>
+				<li class="info-data" data-bind="text: address"></li>
+				<li data-bind="if: directions">
+					<h3 class="info-data">
+						<a target="_blank" data-bind="attr: {href: directions.href}, text: directions.text"></a>
+					</h3>
+				</li>
+			</ul>
+		</div>
+		<div data-bind="foreach: model.acommodationsInfo">
+			<ul class="all info-each accommodations">
+				<li class="info-header" data-bind="text: header"></li>
+				<li class="info-data" data-bind="text: location"></li>
+				<li class="info-data" data-bind="text: address"></li>
+				<li data-bind="if: directions">
+					<h3 class="info-data">
+						<a target="_blank" data-bind="attr: {href: directions.href}, text: directions.text"></a>
+					</h3>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 	<script src="js/lib/knockout-3.4.0.js"></script>

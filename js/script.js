@@ -192,14 +192,14 @@ var counter = {
 		var count = document.getElementsByClassName('counter')[0];
 		var bigDay = new Date(2016, 11, 31);
 		var today = new Date();
-		document.write((today.getTime())/1000);
-		document.write((bigDay.getTime())/1000);
 		var daysLeft_ms = bigDay - today;
 		var one_day = 1000*60*60*24;
 		var daysLeft = Math.round(daysLeft_ms/one_day);
 
+		console.log(count, bigDay, today, daysLeft, daysLeft_ms, one_day);
 
-		console.log(daysLeft);
+
+		//console.log(daysLeft);
 		count.innerHTML = daysLeft;
 
 
@@ -231,6 +231,7 @@ var toggle = {
 		console.log(clicked);
 		console.log(classed);
 		$('.all').hide();
+		$('.rest').show();
 		$(classed).fadeIn('slow', function(){});
 
 	//	$('html, body').animate({

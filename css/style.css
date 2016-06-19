@@ -69,6 +69,14 @@ h1 {
 	border-bottom: 1px solid black;
 }
 
+.info {
+	padding-top: 5vh;
+}
+
+.rest {
+	display: none;
+}
+
 .nav-ul {
 	padding-left: 0;
 	margin-left: 0;
