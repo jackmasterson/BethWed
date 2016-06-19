@@ -69,6 +69,12 @@ h1 {
 	margin-bottom: 10vh;
 }
 
+.ribbon {
+	width: 100vw;
+	height: 20vh;
+	margin-top: 10vh;
+}
+
 .info-each {
 	display: none;
 }
