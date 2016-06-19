@@ -117,13 +117,13 @@ var model = {
 		},
 		{
 			header: "Things Info",
-			location: "St. Mark's Catholic Church",
+			location: "Lorem ipsum doler etsa tu para tael en franco",
 			address: "215 Crescent Parkway, Sea Girt, NJ 08750",
 			directions: ko.observable(false)
 		},
 		{
 			header: "More Things Info",
-			location: "TBD",
+			location: "Carte blanche duboise idaho you dah hoe lee trinity",
 			address: "514 Sunset Drive, Downingtown, PA",
 			directions: {
 				text: "Directions",
