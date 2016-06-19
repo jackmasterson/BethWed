@@ -21,7 +21,6 @@ h1 {
 .splash {
 	height: 100vh;
 	width: 100vw;
-	margin-bottom: 10vh;
 }
 
 .couple {
@@ -30,19 +29,19 @@ h1 {
 	font-weight: lighter;
 }
 
+.all {
+	padding-top: 5vh;
+}
+
 .counter-head {
 	margin-bottom: 5v;
 }
 
 .pic-main {
-	height: 70vh;
-	width: 55vw;
+	height: 65vh;
+	width: 50vw;
 	border: 1px solid black;
 	margin-top: 10vh;
-}
-
-.info-each {
-	margin-bottom: 10vh;
 }
 
 .info-data {
@@ -53,9 +52,6 @@ h1 {
 .info-header {
 	font-family: 'League Script', cursive;
 	font-size: 25px;
-}
-
-.info {
 }
 
 .nav {
@@ -70,11 +66,35 @@ h1 {
 }
 
 .info {
-	padding-top: 5vh;
+	margin-bottom: 10vh;
+}
+
+.info-each {
+	display: none;
+}
+
+.accommodations {
+	padding-top: 7vh;
+}
+
+.small-nav {
+	display: none;
+}
+
+.small-nav-head {
+	display: inline-block;
+	font-family: 'Petit Formal Script', cursive;
+	padding: 3vh;
+	font-size: 20px;
 }
 
 .rest {
 	display: none;
+}
+
+.small-nav-img {
+	height: 150px;
+	width: 175px;
 }
 
 .nav-ul {
