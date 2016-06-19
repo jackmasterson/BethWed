@@ -54,7 +54,8 @@ var model = {
 				name: "Essex Hotel",
 				number: "(908) 908 9089",
 				location: "Sea Girt, NJ 08750",
-				url: "google.com/maps",
+				map: "google.com/maps",
+				site: "https://www.jack-masterson.com",
 				hotel: ko.observable(true),
 				airport: ko.observable(false)
 			},
@@ -62,7 +63,8 @@ var model = {
 				name: "Sussex Hotel",
 				number: "(809) 809 9809",
 				location: "Spring Lake, NJ 07762",
-				url: "google.com/maps",
+				map: "google.com/maps",
+				site: "https://www.jack-masterson.com",
 				hotel: ko.observable(true),
 				airport: ko.observable(false)
 			},
@@ -70,7 +72,8 @@ var model = {
 				name: "Morrison Hotel",
 				number: "(433) 908 43333",
 				location: "Avon, NJ 07762",
-				url: "google.com/maps",
+				map: "google.com/maps",
+				site: "https://www.jack-masterson.com",
 				hotel: ko.observable(true),
 				airport: ko.observable(false)
 			},
@@ -78,7 +81,8 @@ var model = {
 				name: "JFK",
 				number: "(657) 567 6049",
 				location: "NYC",
-				url: "google.com/maps",
+				map: "google.com/maps",
+				site: "https://www.jack-masterson.com",
 				hotel: ko.observable(false),
 				airport: ko.observable(true)
 			},
@@ -86,7 +90,8 @@ var model = {
 				name: "LGA",
 				number: "(254) 674 9304",
 				location: "NYC",
-				url: "google.com/maps",
+				map: "google.com/maps",
+				site: "https://www.jack-masterson.com",
 				hotel: ko.observable(false),
 				airport: ko.observable(true)
 			},
@@ -94,7 +99,8 @@ var model = {
 				name: "Philadelphia",
 				number: "(654) 439 5679",
 				location: "Philadelphia ",
-				url: "google.com/maps",
+				map: "google.com/maps",
+				site: "https://www.jack-masterson.com",
 				hotel: ko.observable(false),
 				airport: ko.observable(true)
 			}

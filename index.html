@@ -33,7 +33,7 @@
 			</ul>
 		</div>
 		<div>
-			<ul class="small-nav accommodations">
+			<ul class="small-nav">
 				<li class="small-nav-head hotel-nav" data-bind="click: toggle.hotels">
 					<h2>Hotels</h2>
 					<img class="small-nav-img" src="img/hotel.png">
@@ -50,7 +50,12 @@
 					<li class="info-data" data-bind="text: number"></li>
 					<li class="info-data">
 						<h3 class="info-data">
-							<a target="_blank" data-bind="attr: {href: url}">Directions</a>
+							<a target="_blank" class="site" data-bind="attr: {href: site}">Website</a>
+						</h3>
+					</li>
+					<li class="info-data">
+						<h3 class="info-data">
+							<a target="_blank" class="directions" data-bind="attr: {href: map}">Directions</a>
 						</h3>
 					</li>
 				</ul>

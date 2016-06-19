@@ -75,10 +75,13 @@ h1 {
 
 .accommodations {
 	padding-top: 7vh;
+	display: inline-block;
+	width: 28vw;
 }
 
 .small-nav {
 	display: none;
+	padding-top: 7vh;
 }
 
 .small-nav-head {
@@ -86,6 +89,7 @@ h1 {
 	font-family: 'Petit Formal Script', cursive;
 	padding: 3vh;
 	font-size: 20px;
+	cursor: pointer;
 }
 
 .rest {
