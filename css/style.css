@@ -56,13 +56,13 @@ h1 {
 
 .nav {
 	position: fixed;
-	z-index: 5;
+	z-index: 50;
 	height: 7vh;
 	width: 100vw;
 	background-color: white;
 	color: black;
 	font-family: 'Petit Formal Script', cursive;
-	border-bottom: 1px solid black;
+
 }
 
 .info {
@@ -72,7 +72,18 @@ h1 {
 .ribbon {
 	width: 100vw;
 	height: 20vh;
-	margin-top: 10vh;
+	position: fixed;
+	z-index: 1;
+	left: 1vw;
+}
+
+.ribbon-slant {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 1vh;
+	right: 1vw;
+	z-index: 100;
 }
 
 .info-each {
@@ -100,6 +111,7 @@ h1 {
 
 .rest {
 	display: none;
+	padding-top: 8vh;
 }
 
 .small-nav-img {
@@ -109,7 +121,11 @@ h1 {
 
 .nav-ul {
 	padding-left: 0;
-	margin-left: 0;
+	width: 100vw;
+	position: fixed;
+	z-index: 2;
+	border-bottom: 1px solid black;
+	font-weight: bold;
 }
 
 .nav-li {
