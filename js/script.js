@@ -113,17 +113,17 @@ var viewModel = {
 var counter = {
 	init: function(){
 		var count = document.getElementsByClassName('counter')[0];
-		console.log(count);
-		console.log(count.innerHTML);
-		var days = 197;
-		
-		function daysLeft() {
-			return --days;
-		}
-		count.innerHTML = daysLeft();
-		//daysLeft();
+		var bigDay = new Date(2016, 11, 31);
+		var today = new Date();
+		var daysLeft_ms = bigDay - today;
+		var one_day = 1000*60*60*24;
+		var daysLeft = Math.round(daysLeft_ms/one_day);
 
-	//	days = daysLeft;
+		document.write((today.getTime())/1000);
+		document.write((bigDay.getTime())/1000);
+
+		count.innerHTML = daysLeft;
+
 
 	}
 };
