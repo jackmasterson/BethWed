@@ -24,18 +24,21 @@ var model = {
 			header: 'The Wedding',
 			location: 'December 31, 2016',
 			address: '2:00pm',
+			src: "img/bells.jpg",
 			directions: ko.observable(false)
 		},
 		{
 			header: "The Ceremony",
 			location: "St. Mark's Catholic Church",
 			address: "215 Crescent Parkway, Sea Girt, NJ 08750",
+			src: "img/church.png",
 			directions: ko.observable(false)
 		},
 		{
 			header: "The Reception",
 			location: "TBD",
 			address: "514 Sunset Drive, Downingtown, PA",
+			src: "img/reception.png",
 			directions: {
 				text: "Directions",
 				href: "https://www.google.com/maps/dir/"+
