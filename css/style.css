@@ -73,11 +73,32 @@ h1 {
 
 .ribbon {
 	width: 100vw;
-	height: 20vh;
+	height: 18vh;
 	position: fixed;
 	z-index: 1;
 	left: 1vw;
 }
+
+.gradient-side {
+  margin: 0;
+  padding: 0;
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0.8), rgba(255,255,255,0.2)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(255,255,255,0.8), rgba(255,255,255,0.2)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(255,255,255,0.8), rgba(255,255,255,0.2)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0.2)); /* Standard syntax */
+}
+
+.gradient-top {
+  margin: 0;
+  padding: 0;
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(255,255,255,1), rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(255,255,255,1), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)); /* Standard syntax */
+}
+
 
 .ribbon-slant {
 	width: 100vw;
