@@ -1,5 +1,6 @@
 * {
 	text-align: center;
+	vertical-align: middle;
 	margin: 0;
 }
 
@@ -9,117 +10,129 @@ ul {
 }
 
 a {
-	color: #ccc;
+	color: black;
 	cursor: pointer;
 }
 
-.nav-a {
-	text-decoration: none;
+h1 {
+	font-family: 'League Script', cursive;
 }
 
-.main {
+.splash {
 	height: 100vh;
 	width: 100vw;
-}
-
-.shade {
 	position: fixed;
-	background-color: rgba(0,0,0,0.5);
-	z-index: 5;
-	height: 100vh;
-	width: 20vw;
+	z-index: 500;
+	top: 10vh;
 }
 
-.shade-two {
-	position: absolute;
-	background-color: rgba(0,0,0,0.6);
-	z-index: 4;
-	height: 100vh;
-	width: 100vw;
-	padding-left: 10vw;
+.couple {
+	font-size: 50px;
+	letter-spacing: 10px;
+	font-weight: lighter;
 }
 
-.shade-three {
-	background-color: rgba(0,0,0,0.6);
-	height: 100vh;
-	width: 100vw;
-	padding-left: 15vw;
-}
-
-.header {
-	width: 100vw;
-	color: white;
-	font-size: 40px;
-	font-family: 'Petit Formal Script', cursive;
+.all {
 	padding-top: 5vh;
 }
 
-.sub {
-	margin-left: 0;
-	padding-right: 15vw;
-	padding-top: 3vh;
+.counter-head {
+	margin-bottom: 5v;
 }
 
-.deets {
-	margin-top: 65vh;
+.pic-main {
+	height: 65vh;
+	width: 50vw;
+	border: 1px solid black;
 }
 
-.main {
-	display: none;
+.info-data {
+	font-size: 20px;
+	font-weight: lighter;
 }
 
-.head-div {
-	background: no-repeat fixed;
-	background-size: cover;
-	min-height: 100vh;
-	min-width: 100vw;
-	z-index: 4;
-}
-
-.nav-head {
-	color: white;
-	font-family: 'Petit Formal Script', cursive;
-	margin-top: 18vh;
-}
-
-.gen-info-div {
+.info-header {
+	font-family: 'League Script', cursive;
 	font-size: 30px;
-	color: white;
-	float: left;
 }
 
-.sub-gen-div {
-	margin-top: 20vh;
+.nav {
+	position: fixed;
+	z-index: 50;
+	height: 7vh;
+	width: 100vw;
+	background-color: white;
+	color: black;
+	font-family: 'Petit Formal Script', cursive;
+
 }
 
-.head-img-div {
-	margin-top: 20vh;
-	margin-right: 8vw;
+.info {
+	margin-bottom: 4vh;
 }
 
-.head-img {
-	height: 250px;
-	width: 180px;
-	margin-left: 8vw;
+.ribbon {
+	width: 100vw;
+	height: 20vh;
+	position: fixed;
+	z-index: 1;
+	left: 1vw;
 }
 
-.left {
-	display: inline-block;
+.ribbon-slant {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 1vh;
+	right: 1vw;
+	z-index: 100;
 }
 
-.both {
+.info-each {
 	display: none;
-	height: 300px;
-	width: 250px;
 }
 
-.ceremony-ul {
-	width: 30vw;
-	float: left;
-	margin-bottom: 5vh;
+.accommodations {
+	padding-top: 7vh;
+	display: inline-block;
+	width: 28vw;
 }
 
-#ceremony-ul-id {
-	margin-left: 8vw;
+.small-nav {
+	display: none;
+	padding-top: 7vh;
 }
 
+.small-nav-head {
+	display: inline-block;
+	font-family: 'Petit Formal Script', cursive;
+	padding: 3vh;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.rest {
+	display: none;
+	padding-top: 8vh;
+}
+
+.small-nav-img {
+	height: 150px;
+	width: 175px;
+}
+
+.nav-ul {
+	padding-left: 0;
+	width: 100vw;
+	position: fixed;
+	z-index: 2;
+	border-bottom: 1px solid black;
+	font-weight: bold;
+}
+
+.nav-li {
+	display: inline-block;
+	margin: 1vh 3vw 1vh 3vw;
+	font-size: 20px;
+	cursor: pointer;
+}

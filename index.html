@@ -9,37 +9,76 @@
 	<link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="shade">
-		<div data-bind="foreach: model.mainSect">
-			<h2 class="nav-head">
-				<a data-bind="text: sect, click: toggle.nav"></a>
-			</h2>
+	<div class="nav">
+		<img class="ribbon" src="img/ribbon.png">
+		<ul class="nav-ul" data-bind="foreach: model.navHead">
+			<li class="nav-li" data-bind="click: toggle.nav, text: headers"></li>
+		</ul>
+	</div>
+	<div class="all splash home">
+		<img class="pic-main" src="img/hawaii.jpg">
+		<h1 class="couple">Beth and Andrew!</h1>
+		<h3 class="counter-head">Only <span class="counter"></span> Days until the Big Day!</h3>
+	</div>
+	<div class="rest">
+		<div data-bind="foreach: model.weddingInfo" class="all info-each info">
+			<ul class="all info-each info">
+				<li class="info-header" data-bind="text: header"></li>
+				<li class="info-data">
+					<img class="small-nav-img" data-bind="attr: {src: src}">
+				</li>
+				<li class="info-data" data-bind="text: location"></li>
+				<li class="info-data" data-bind="text: address"></li>
+				<li data-bind="if: directions">
+					<h3 class="info-data">
+						<a target="_blank" data-bind="attr: {href: directions.href}, text: directions.text"></a>
+					</h3>
+				</li>
+			</ul>
 		</div>
-		<h2 class="nav-head">
-			<a class="nav-a" href="#top">Top</a>
-		</h2>
-	</div>
-	<div class="shade-two top">
-		<h1 class="header">Beth Masterson and Andrew Knapp</h1>
-		<h3 class="header deets">December 31, 2016</h3>
-	</div>
-	<div class="head-div" class="home"></div>
-	<div data-bind="foreach: model.mainSect">
-		<div class="main" data-bind="style: {background: backImg, backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}, attr: { id: divID }">
-			<div class="gen-info-div shade-three">
-				<h1 class="sub header" data-bind="text: header"></h1>
-				<div class="sub-gen-div" data-bind="foreach: ceremony">
-					<ul class="ceremony-ul" data-bind="attr: { id: id }">
-						<li data-bind="text: header"></li>
-						<li>
-							<a target="_blank" data-bind="attr: {href: url}, text: subHead"></a>
-						</li>
-						<li data-bind="text: location"></li>
-					</ul>
-				</div>
+		<div>
+			<ul class="small-nav all">
+				<li class="small-nav-head hotel-nav" data-bind="click: toggle.hotels">
+					<h2>Hotels</h2>
+					<img class="small-nav-img" src="img/hotel.png">
+				</li>
+				<li class="small-nav-head airport-nav" data-bind="click: toggle.airports">
+					<h2>Airports</h2>
+					<img class="small-nav-img" src="img/airport.png">
+				</li>
+			</ul>
+			<div data-bind="foreach: model.accommodationsInfo">
+				<ul data-bind="css: {airports: airport, hotels: hotel}" class="all info-each accommodations">
+					<li class="info-header" data-bind="text: name"></li>
+					<li class="info-data" data-bind="text: location"></li>
+					<li class="info-data" data-bind="text: number"></li>
+					<li class="info-data">
+						<h3 class="info-data">
+							<a target="_blank" class="site" data-bind="attr: {href: site}">Website</a>
+						</h3>
+					</li>
+					<li class="info-data">
+						<h3 class="info-data">
+							<a target="_blank" class="directions" data-bind="attr: {href: map}">Directions</a>
+						</h3>
+					</li>
+				</ul>
+			</div>
+			<div data-bind="foreach: model.thingsInfo" class="all things">
+				<ul class="all info-each things">
+					<li class="info-header" data-bind="text: header"></li>
+					<li class="info-data" data-bind="text: location"></li>
+					<li class="info-data" data-bind="text: address"></li>
+					<li data-bind="if: directions">
+						<h3 class="info-data">
+							<a target="_blank" data-bind="attr: {href: directions.href}, text: directions.text"></a>
+						</h3>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
+
 	<script src="js/lib/knockout-3.4.0.js"></script>
 	<script src="js/lib/jquery-1.12.4.min.js"></script>
 	  <script src="js/lib/chocolate/jquery.chocolate.js"></script>
