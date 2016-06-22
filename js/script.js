@@ -186,33 +186,18 @@ var counter = {
 		var count = document.getElementsByClassName('counter')[0];
 		var bigDay = new Date(2016, 11, 31);
 		var today = new Date();
+		console.log(today);
+
 		var daysLeft_ms = bigDay - today;
+		console.log(daysLeft_ms);
 		var one_day = 1000*60*60*24;
-		var daysLeft = Math.round(daysLeft_ms/one_day);
+		var daysLeft = Math.floor(daysLeft_ms/one_day);
 
 		count.innerHTML = daysLeft;
 
 
 	}
 };
-
-
-/*function picSwap () {
-  $( ".left" ).animate({
-    opacity: 0.75,
-    height: "toggle"
-  }, 1400, function() {
-  	$(".left").fadeOut(1000);
-  	$(".right").fadeOut(1000);
-  	$(".both").fadeIn(1200); 
-  })
-
-};*/
-
-/**** slider credit goes to kentowatanabe, found at: 
- 	[http://www.jqueryscript.net/demo/Simplest-Fullscreen
- 		-Background-Slideshow-With-jQuery-Chocolate-js/]
- ****/
 
 
 var toggle = {
