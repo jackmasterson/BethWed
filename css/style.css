@@ -6,7 +6,6 @@
 }
 
 body {
-
  	background: url(..//img/splash-back.jpg) no-repeat;
  	background-size: 100vw 100vh;
 }
@@ -49,7 +48,7 @@ h1 {
 
 .pic-main {
 	height: 65vh;
-	width: 50vw;
+	width: 38vw;
 	border: 1px solid black;
 }
 
@@ -132,6 +131,16 @@ h1 {
 	padding-top: 7vh;
 	display: inline-block;
 	width: 28vw;
+}
+
+.airports {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.hotels {
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .small-nav {
