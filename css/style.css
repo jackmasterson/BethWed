@@ -24,12 +24,9 @@ h1 {
 	position: fixed;
 	z-index: 500;
 	top: 10vh;
-  background: white; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(right, rgba(255,215,0,0), rgba(255,215,0,0.5)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left, rgba(255,215,0,0), rgba(255,215,0,0.5)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(left, rgba(255,215,0,0), rgba(255,215,0,0.5)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to left, rgba(255,215,0,0), rgba(255,215,0,0.5)); /* Standard syntax */
-
+ 	background: url(..//img/splash-back.jpg) no-repeat;
+ 	background-size: cover;
+ 	color: white;
 }
 
 .couple {
@@ -82,15 +79,11 @@ h1 {
 	height: 10vh;
 	position: fixed;
 	z-index: 1;
-  margin: 0;
-  padding: 0;
-  background: white; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(right, rgba(255,215,0,0), rgba(255,215,0,0.5)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left, rgba(255,215,0,0), rgba(255,215,0,0.5)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(left, rgba(255,215,0,0), rgba(255,215,0,0.5)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to left, rgba(255,215,0,0), rgba(255,215,0,0.5)); /* Standard syntax */
+  	margin: 0;
+ 	padding: 0;
+	background-color: rgba(255,255,255,0.5);
+	color: black; 
 }
-
 .gradient-top {
 	width: 10vw;
 	height: 100vh;
@@ -99,11 +92,6 @@ h1 {
 	right: 2vw;
   margin: 0;
   padding: 0;
-  background: white; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(top, rgba(255,215,0,0), rgba(255,215,0,1)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom, rgba(255,215,0,0), rgba(255,215,0,1)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom, rgba(255,215,0,0), rgba(255,215,0,1)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom, rgba(255,215,0,0), rgba(255,215,0,1)); /* Standard syntax */
 }
 
 
