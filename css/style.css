@@ -17,7 +17,6 @@ ul {
 }
 
 a {
-	color: black;
 	cursor: pointer;
 }
 
@@ -57,11 +56,24 @@ h1 {
 .info-data {
 	font-size: 20px;
 	font-weight: lighter;
+		color: black;
 }
 
 .info-header {
 	font-family: 'League Script', cursive;
 	font-size: 30px;
+		color: black;
+}
+
+.inline {
+	display: inline-block;
+	margin-top: 10vh;
+	width: 25vw;
+	background-color: rgba(255,255,255,0.7);
+	margin-left: 0;
+	padding-left: 0;
+	height: 300px;
+	width: 300px;
 }
 
 .nav {
@@ -77,7 +89,10 @@ h1 {
 
 .info {
 	margin-bottom: 4vh;
+
 }
+
+
 
 .gradient-side {
 	width: 100vw;
@@ -113,10 +128,6 @@ h1 {
 	height: 100vh;
 }
 
-.info-each {
-	display: none;
-}
-
 .accommodations {
 	padding-top: 7vh;
 	display: inline-block;
@@ -126,6 +137,7 @@ h1 {
 .small-nav {
 	display: none;
 	padding-top: 7vh;
+	margin-bottom: 15px;
 }
 
 .small-nav-head {
@@ -134,6 +146,16 @@ h1 {
 	padding: 3vh;
 	font-size: 20px;
 	cursor: pointer;
+	background: rgba(255,255,255,0.7);
+	height: 250px;
+	width: 300px;
+}
+
+.accom-div{
+	width: 100vw;
+	padding-top: 0;
+	margin-top: 0;
+	background: rgba(255,255,255,0.7);
 }
 
 .rest {

@@ -23,7 +23,7 @@
 	<div class="rest">
 
 		<div data-bind="foreach: model.weddingInfo" class="all info-each info">
-			<ul class="all info-each info">
+			<ul class="all info-each info inline">
 				<li class="info-header" data-bind="text: header"></li>
 				<li class="info-data">
 					<img class="small-nav-img" data-bind="attr: {src: src}">
@@ -40,15 +40,15 @@
 		<div>
 			<ul class="small-nav all">
 				<li class="small-nav-head hotel-nav" data-bind="click: toggle.hotels">
-					<h2>Hotels</h2>
+					<h2 class="info-header">Hotels</h2>
 					<img class="small-nav-img" src="img/hotel.png">
 				</li>
 				<li class="small-nav-head airport-nav" data-bind="click: toggle.airports">
-					<h2>Airports</h2>
+					<h2 class="info-header">Airports</h2>
 					<img class="small-nav-img" src="img/airport.png">
 				</li>
 			</ul>
-			<div data-bind="foreach: model.accommodationsInfo">
+			<div class="accom-div" data-bind="foreach: model.accommodationsInfo">
 				<ul data-bind="css: {airports: airport, hotels: hotel}" class="all info-each accommodations">
 					<li class="info-header" data-bind="text: name"></li>
 					<li class="info-data" data-bind="text: location"></li>
