@@ -7,7 +7,7 @@
 
 body {
  	background: url(..//img/splash-back.jpg) no-repeat;
- 	background-size: 100vw 100vh;
+ 	background-size: 100vw 200vh;
 }
 
 ul {
@@ -55,25 +55,30 @@ h1 {
 .info-data {
 	font-size: 20px;
 	font-weight: lighter;
-		color: black;
+		
 }
 
 .info-header {
 	font-family: 'League Script', cursive;
 	font-size: 30px;
-		color: black;
+}
+
+.white {
+		background-color: rgba(0,0,0,0.4);
+		margin-top: 0;
+		padding-top: 0;
+		height: 190vh;
+		width: 100vw;
+}
+
+.description-data {
+	padding: 20px 50px 5px 50px;
 }
 
 .inline {
-	display: inline-block;
-	margin-top: 10vh;
-	width: 25vw;
-	background-color: rgba(255,255,255,0.7);
-	margin-left: 0;
-	padding-left: 0;
-	height: 300px;
-	width: 300px;
-	padding: 15px;
+	color: white;
+
+	padding: 20px 100px 20px 100px;
 }
 
 .nav {
@@ -170,7 +175,8 @@ h1 {
 
 .rest {
 	display: none;
-	padding-top: 8vh;
+	padding-top: 7vh;
+
 }
 
 .small-nav-img {

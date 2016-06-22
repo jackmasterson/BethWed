@@ -21,61 +21,66 @@
 		<h3 class="counter-head">Only <span class="counter"></span> Days until the Big Day!</h3>
 	</div>
 	<div class="rest">
-
-		<div data-bind="foreach: model.weddingInfo" class="all info-each info">
-			<ul class="all info-each info inline">
-				<li class="info-header" data-bind="text: header"></li>
-				<li class="info-data">
-					<img class="small-nav-img" data-bind="attr: {src: src}">
-				</li>
-				<li class="info-data" data-bind="text: location"></li>
-				<li class="info-data" data-bind="text: address"></li>
-				<li data-bind="if: directions">
-					<h3 class="info-data">
-						<a target="_blank" data-bind="attr: {href: directions.href}, text: directions.text"></a>
-					</h3>
-				</li>
-			</ul>
-		</div>
-		<div>
-			<ul class="small-nav all">
-				<li class="small-nav-head hotel-nav" data-bind="click: toggle.hotels">
-					<h2 class="info-header">Hotels</h2>
-					<img class="small-nav-img" src="img/hotel.png">
-				</li>
-				<li class="small-nav-head airport-nav" data-bind="click: toggle.airports">
-					<h2 class="info-header">Airports</h2>
-					<img class="small-nav-img" src="img/airport.png">
-				</li>
-			</ul>
-			<div class="accom-div" data-bind="foreach: model.accommodationsInfo">
-				<ul data-bind="css: {airports: airport, hotels: hotel}" class="all info-each accommodations">
-					<li class="info-header" data-bind="text: name"></li>
-					<li class="info-data" data-bind="text: location"></li>
-					<li class="info-data" data-bind="text: number"></li>
-					<li class="info-data">
-						<h3 class="info-data">
-							<a target="_blank" class="site" data-bind="attr: {href: site}">Website</a>
-						</h3>
+		<div class="white">
+			<div data-bind="foreach: model.weddingInfo" class="all info-each info">
+				<ul class="all info-each info inline">
+					<li class="info-header" data-bind="text: header"></li>
+					<li class="info-header" data-bind="if: time">
+						<h3 class="info-header" data-bind="text: time"></h3>
 					</li>
-					<li class="info-data">
-						<h3 class="info-data">
-							<a target="_blank" class="directions" data-bind="attr: {href: map}">Directions</a>
-						</h3>
+					<li class="info-data" data-bind="if: src">
+						<img class="small-nav-img" data-bind="attr: {src: src}">
+					</li>
+					<li class="info-data" data-bind="text: location"></li>
+					<li class="info-data" data-bind="if: address"><span data-bind="text: address"></li>
+					<li data-bind="if: directions">
+						<h3 class="info-data" data-bind="text: directions"></h3>
+					</li>
+					<li class="info-data description-data" data-bind="if: description">
+						<h3 class="info-data" data-bind="text: description"></h3>
 					</li>
 				</ul>
 			</div>
-			<div data-bind="foreach: model.thingsInfo" class="all things">
-				<ul class="all info-each things">
-					<li class="info-header" data-bind="text: header"></li>
-					<li class="info-data" data-bind="text: location"></li>
-					<li class="info-data" data-bind="text: address"></li>
-					<li data-bind="if: directions">
-						<h3 class="info-data">
-							<a target="_blank" data-bind="attr: {href: directions.href}, text: directions.text"></a>
-						</h3>
+			<div>
+				<ul class="small-nav all">
+					<li class="small-nav-head hotel-nav" data-bind="click: toggle.hotels">
+						<h2 class="info-header">Hotels</h2>
+						<img class="small-nav-img" src="img/hotel.png">
+					</li>
+					<li class="small-nav-head airport-nav" data-bind="click: toggle.airports">
+						<h2 class="info-header">Airports</h2>
+						<img class="small-nav-img" src="img/airport.png">
 					</li>
 				</ul>
+				<div class="accom-div" data-bind="foreach: model.accommodationsInfo">
+					<ul data-bind="css: {airports: airport, hotels: hotel}" class="all info-each accommodations">
+						<li class="info-header" data-bind="text: name"></li>
+						<li class="info-data" data-bind="text: location"></li>
+						<li class="info-data" data-bind="text: number"></li>
+						<li class="info-data">
+							<h3 class="info-data">
+								<a target="_blank" class="site" data-bind="attr: {href: site}">Website</a>
+							</h3>
+						</li>
+						<li class="info-data">
+							<h3 class="info-data">
+								<a target="_blank" class="directions" data-bind="attr: {href: map}">Directions</a>
+							</h3>
+						</li>
+					</ul>
+				</div>
+				<div data-bind="foreach: model.thingsInfo" class="all things">
+					<ul class="all info-each things">
+						<li class="info-header" data-bind="text: header"></li>
+						<li class="info-data" data-bind="text: location"></li>
+						<li class="info-data" data-bind="text: address"></li>
+						<li data-bind="if: directions">
+							<h3 class="info-data">
+								<a target="_blank" data-bind="attr: {href: directions.href}, text: directions.text"></a>
+							</h3>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
