@@ -45,7 +45,7 @@ var model = {
 			time: "7:00pm",
 			description: "The Crystal Point is a 15-minute drive "+
 				"from St. Mark's Church. Even in winter, the Jersey Shore "+
-				"has plenty of things to do during the ceremony and reception.",
+				"has plenty of things to do between the ceremony and reception.",
 			location: "Crystal Point Yacht Club",
 			address: "3900 River Road",
 			directions: "Point Pleasant Beach, NJ 08742",

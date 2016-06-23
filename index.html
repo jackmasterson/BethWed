@@ -7,10 +7,10 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="nav">
-		<div class="gradient-side"></div>
 		<ul class="nav-ul" data-bind="foreach: model.navHead">
 			<li class="nav-li" data-bind="click: toggle.nav, text: headers"></li>
 		</ul>
@@ -24,9 +24,11 @@
 		<div class="white">
 			<div data-bind="foreach: model.weddingInfo" class="all info-each info">
 				<ul class="all info-each info inline">
-					<li class="info-header" data-bind="text: header"></li>
-					<li class="info-header" data-bind="if: time">
-						<h3 class="info-header" data-bind="text: time"></h3>
+					<li class="info-header">
+						<h3 data-bind="text: header"></h3>
+					</li>
+					<li data-bind="if: time">
+						<h2 data-bind="text: time"></h2>
 					</li>
 					<li class="info-data" data-bind="if: src">
 						<img class="small-nav-img" data-bind="attr: {src: src}">

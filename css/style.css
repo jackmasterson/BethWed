@@ -44,11 +44,12 @@ h1 {
 
 .counter-head {
 	margin-bottom: 5v;
+	font-family: 'Mystery Quest', cursive;
 }
 
 .pic-main {
 	height: 65vh;
-	width: 38vw;
+	width: 35vw;
 	border: 1px solid black;
 }
 
@@ -59,15 +60,15 @@ h1 {
 }
 
 .info-header {
-	font-family: 'League Script', cursive;
 	font-size: 30px;
+	font-family: 'Mystery Quest', cursive;
 }
 
 .white {
 		background-color: rgba(0,0,0,0.4);
 		margin-top: 0;
 		padding-top: 0;
-		height: 190vh;
+		height: 192vh;
 		width: 100vw;
 }
 
@@ -77,8 +78,8 @@ h1 {
 
 .inline {
 	color: white;
-
-	padding: 20px 100px 20px 100px;
+	padding: 20px 200px 20px 200px;
+	margin: 15px;
 }
 
 .nav {
@@ -95,37 +96,6 @@ h1 {
 .info {
 	margin-bottom: 4vh;
 
-}
-
-
-
-.gradient-side {
-	width: 100vw;
-	height: 10vh;
-	position: fixed;
-	z-index: 1;
-  	margin: 0;
- 	padding: 0;
-	color: black; 
-}
-.gradient-top {
-	width: 10vw;
-	height: 100vh;
-	position: fixed;
-	z-index: 1;
-	right: 2vw;
-  margin: 0;
-  padding: 0;
-}
-
-
-.ribbon-slant {
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-	top: 1vh;
-	right: 1vw;
-	z-index: 100;
 }
 
 .left {
@@ -157,7 +127,7 @@ h1 {
 
 .small-nav-head {
 	display: inline-block;
-	font-family: 'Petit Formal Script', cursive;
+	font-family: 'Mystery Quest', cursive;
 	padding: 3vh;
 	font-size: 20px;
 	cursor: pointer;
