@@ -36,7 +36,7 @@ var model = {
 			time: "2:00pm",
 			location: "St. Mark's Catholic Church",
 			address: "215 Crescent Parkway, Sea Girt, NJ 08750",
-			src: "img/church.png",
+			src: "img/marks.jpg",
 			directions: "Sea Girt, NJ 08750",
 			description: ko.observable(false)
 		},
@@ -49,7 +49,7 @@ var model = {
 			location: "Crystal Point Yacht Club",
 			address: "3900 River Road",
 			directions: "Point Pleasant Beach, NJ 08742",
-			src: "img/reception.png"/*,
+			src: "img/reception.jpg"/*,
 			directions: {
 				text: "Directions",
 				href: "https://www.google.com/maps/dir/"+

@@ -13,6 +13,7 @@ body {
 ul {
 	margin-left: 0;
 	list-style-type: none;
+
 }
 
 a {
@@ -30,6 +31,7 @@ h1 {
 	z-index: 500;
 	top: 10vh;
  	color: white;
+
 }
 
 .couple {
@@ -48,14 +50,15 @@ h1 {
 }
 
 .pic-main {
-	height: 65vh;
-	width: 35vw;
+	height: 63vh;
+	width: 33vw;
 	border: 1px solid black;
 }
 
 .info-data {
 	font-size: 20px;
 	font-weight: lighter;
+	font-family: Open Sans;
 		
 }
 
@@ -73,12 +76,13 @@ h1 {
 }
 
 .description-data {
-	padding: 20px 50px 5px 50px;
+	padding: 20px 20px 5px 20px;
+	font-family: Open Sans;
 }
 
 .inline {
 	color: white;
-	padding: 20px 200px 20px 200px;
+	padding: 20px 100px 20px 100px;
 	margin: 15px;
 }
 
@@ -94,7 +98,6 @@ h1 {
 }
 
 .info {
-	margin-bottom: 4vh;
 
 }
 
@@ -107,6 +110,10 @@ h1 {
 	padding-top: 7vh;
 	display: inline-block;
 	width: 28vw;
+}
+
+.accom {
+	color: black;
 }
 
 .airports {
@@ -152,6 +159,8 @@ h1 {
 .small-nav-img {
 	height: 150px;
 	width: 175px;
+	margin: 15px;
+	border: 2px solid black;
 }
 
 .nav-ul {
