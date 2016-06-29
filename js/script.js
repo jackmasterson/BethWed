@@ -218,6 +218,9 @@ var toggle = {
 		console.log(classed);
 		$('.all').hide();
 		$('.rest').show();
+		if(classed === '.home'){
+			$('.rest').hide();
+		}
 		$(classed).fadeIn('slow', function(){});
 
 	//	$('html, body').animate({
