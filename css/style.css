@@ -8,7 +8,6 @@
 ul {
 	margin-left: 0;
 	list-style-type: none;
-
 }
 
 a {
@@ -105,6 +104,11 @@ h1 {
 .info {
 	padding-bottom: 115px;
 	padding-top: 85px;
+}
+
+.info:last-of-type {
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .left {
