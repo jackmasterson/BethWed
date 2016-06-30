@@ -5,11 +5,6 @@
 	color: white;
 }
 
-body {
- 	background: url(..//img/splash-back.jpg);
- 	background-size: 100vw 100vh;
-}
-
 ul {
 	margin-left: 0;
 	list-style-type: none;
@@ -43,8 +38,10 @@ h1 {
 	width: 100vw;
 	position: fixed;
 	z-index: 500;
-	top: 10vh;
+	top: 6vh;
  	color: white;
+ 	background: url(..//img/splash-back.jpg);
+ 	background-size: 100vw 100vh;
 
 }
 
@@ -89,8 +86,8 @@ h1 {
 		background-color: rgba(0,0,0,0.4);
 		margin-top: 0;
 		padding-top: 0;
-		height: 192vh;
-		width: 99.2vw;
+		height: 300vh;
+		width: 100vw;
 }
 
 .description-data {
@@ -172,6 +169,10 @@ h1 {
 .rest {
 	display: none;
 	padding-top: 7vh;
+	height: 300vh;
+	width: 100vw;
+	background: url(..//img/splash-back.jpg) no-repeat fixed;
+	background-size: cover;
 
 }
 

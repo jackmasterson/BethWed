@@ -214,14 +214,14 @@ var counter = {
 var toggle = {
 	nav: function(clicked) {
 		var classed = "." + clicked.divID;
-		console.log(clicked);
-		console.log(classed);
 		$('.all').hide();
 		$('.rest').show();
 		if(classed === '.home'){
 			$('.rest').hide();
 		}
-		$(classed).fadeIn('slow', function(){});
+		window.scrollTo(0,0);
+		$(classed).fadeIn('slow', function(){
+		});
 
 	//	$('html, body').animate({
 	  //      scrollTop: $(classed).offset().top
