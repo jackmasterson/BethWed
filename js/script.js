@@ -29,7 +29,8 @@ var model = {
 			directions: ko.observable(false),
 			description: "We met at a New Year's Eve party in Boston. "+
 				"We can't think of anything more fun than ringing in 2017 "+
-				"with our family and friends. We hope you can join us!"
+				"with our family and friends. We hope you can join us!",
+			scroll: "Scroll Down for More Info!"
 		},
 		{
 			header: "The Ceremony",
@@ -38,7 +39,8 @@ var model = {
 			address: "215 Crescent Parkway, Sea Girt, NJ 08750",
 			src: "img/marks.jpg",
 			directions: "Sea Girt, NJ 08750",
-			description: ko.observable(false)
+			description: ko.observable(false),
+			scroll: ko.observable(false)
 		},
 		{
 			header: "The Reception",
@@ -49,7 +51,8 @@ var model = {
 			location: "Crystal Point Yacht Club",
 			address: "3900 River Road",
 			directions: "Point Pleasant Beach, NJ 08742",
-			src: "img/reception.jpg"/*,
+			src: "img/reception.jpg",
+			scroll: ko.observable(false)/*,
 			directions: {
 				text: "Directions",
 				href: "https://www.google.com/maps/dir/"+
