@@ -72,7 +72,7 @@ var model = {
 				number: "(908) 908 9089",
 				location: "Sea Girt, NJ 08750",
 				map: "google.com/maps",
-				site: "https://www.jack-masterson.com",
+				site: "https://jack-masterson.com",
 				hotel: ko.observable(true),
 				airport: ko.observable(false)
 			},
@@ -81,7 +81,7 @@ var model = {
 				number: "(809) 809 9809",
 				location: "Spring Lake, NJ 07762",
 				map: "google.com/maps",
-				site: "https://www.jack-masterson.com",
+				site: "https://jack-masterson.com",
 				hotel: ko.observable(true),
 				airport: ko.observable(false)
 			},
@@ -90,7 +90,7 @@ var model = {
 				number: "(433) 908 43333",
 				location: "Avon, NJ 07762",
 				map: "google.com/maps",
-				site: "https://www.jack-masterson.com",
+				site: "https://jack-masterson.com",
 				hotel: ko.observable(true),
 				airport: ko.observable(false)
 			},
@@ -99,7 +99,7 @@ var model = {
 				number: "(657) 567 6049",
 				location: "NYC",
 				map: "google.com/maps",
-				site: "https://www.jack-masterson.com",
+				site: "https://jack-masterson.com",
 				hotel: ko.observable(false),
 				airport: ko.observable(true)
 			},
@@ -108,7 +108,7 @@ var model = {
 				number: "(254) 674 9304",
 				location: "NYC",
 				map: "google.com/maps",
-				site: "https://www.jack-masterson.com",
+				site: "https://jack-masterson.com",
 				hotel: ko.observable(false),
 				airport: ko.observable(true)
 			},
@@ -117,7 +117,7 @@ var model = {
 				number: "(654) 439 5679",
 				location: "Philadelphia ",
 				map: "google.com/maps",
-				site: "https://www.jack-masterson.com",
+				site: "https://jack-masterson.com",
 				hotel: ko.observable(false),
 				airport: ko.observable(true)
 			}
