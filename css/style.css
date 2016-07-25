@@ -60,11 +60,14 @@ a:hover {
 .info-data {
 	font-size: 20px;
 	font-weight: lighter;
+	margin-bottom: 1vh;
 		
 }
 
+
 .info-header {
 	font-size: 30px;
+	margin-bottom: 1vh;
 }
 
 .smaller-header {
@@ -76,18 +79,23 @@ a:hover {
 		background-color: rgba(0,0,0,0.4);
 		margin-top: 0;
 		padding-top: 0;
-		height: 300vh;
+		height: 220vh;
 		width: 100vw;
 }
 
 .description-data {
-	padding: 0 20px 0 20px;
+	padding: 20px 50px 0 50px;
 }
 
 .inline {
 	color: white;
 	padding: 20px 100px 20px 100px;
 	margin: 15px;
+}
+
+.hide {
+	color: white;
+	padding: 100px 100px 20px 100px;
 }
 
 .nav {
@@ -160,7 +168,7 @@ a:hover {
 .rest {
 	display: none;
 	padding-top: 7vh;
-	height: 300vh;
+	height: 220vh;
 	width: 100vw;
 	background: url(..//img/splash-back.jpg) no-repeat fixed;
 	background-size: cover;

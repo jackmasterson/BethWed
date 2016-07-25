@@ -11,6 +11,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
 </head>
 <body>
+
+
 	<div class="nav">
 		<ul class="nav-ul" data-bind="foreach: model.navHead">
 			<li class="nav-li" data-bind="click: toggle.nav, text: headers"></li>
@@ -24,47 +26,14 @@
 	</div>
 	<div class="rest">
 		<div class="white">
-			<div data-bind="foreach: model.weddingInfo" class="all info-each info">
-				<ul class="all info-each info inline">
-					<li class="info-header">
-						<h3 data-bind="text: header"></h3>
-					</li>
-					<li data-bind="if: time">
-						<h2 data-bind="text: time"></h2>
-					</li>
-					<li class="info-data" data-bind="if: src">
-						<img class="small-nav-img" data-bind="attr: {src: src}">
-					</li>
-					<li class="info-data" data-bind="text: location"></li>
-					<li class="info-data" data-bind="if: address"><span  class="smaller-header" data-bind="text: address"></li>
-					<li data-bind="if: directions">
-						<h3 class="info-data smaller-header" data-bind="text: directions"></h3>
-					</li>
-					<li class="info-data description-data" data-bind="if: description">
-						<h3 class="info-data" data-bind="text: description"></h3>
-					</li>
-				</ul>
-			</div>
+			<div data-bind="template: { name: 'info-template', foreach: model.weddingInfo }"></div>
+			<div data-bind="template: { name: 'info-template', foreach: model.whereToStay }"></div>
+			<div data-bind="template: { name: 'info-template', foreach: model.howToGetThere }"></div>
 
 			<div>
 				<ul class="small-nav all">
 				</ul>
 				<div class="accom-div" data-bind="foreach: model.accommodationsInfo">
-					<ul data-bind="css: {airports: airport, hotels: hotel}" class="all info-each accommodations">
-						<li class="info-header accom" data-bind="text: name"></li>
-						<li class="info-data accom" data-bind="text: location"></li>
-						<li class="info-data accom" data-bind="text: number"></li>
-						<li class="info-data accom">
-							<h3 class="info-data accom">
-								<a target="_blank" class="site" data-bind="attr: {href: site}">Website</a>
-							</h3>
-						</li>
-						<li class="info-data accom">
-							<h3 class="info-data accom">
-								<a target="_blank" class="directions" data-bind="attr: {href: map}">Directions</a>
-							</h3>
-						</li>
-					</ul>
 				</div>
 				<div data-bind="foreach: model.thingsInfo" class="all things">
 					<ul class="all info-each things">
@@ -81,6 +50,32 @@
 			</div>
 		</div>
 	</div>
+
+
+	<script type="text/html" id="info-template">
+		<div>
+			<ul class="hide" data-bind="attr: {'class': ulClass}, css: {hide: ulClass}">
+				<li class="info-header">
+					<h3 data-bind="text: header"></h3>
+				</li>
+				<li class="info-data" data-bind="if: time">
+					<h2 data-bind="text: time"></h2>
+				</li>
+				<li class="info-data" data-bind="if: src">
+					<img class="small-nav-img" data-bind="attr: {src: src}">
+				</li>
+				<li class="info-data" data-bind="text: location"></li>
+				<li class="info-data" data-bind="if: address"><span data-bind="text: address"></li>
+				<li data-bind="if: directions">
+					<h3 class="info-data" data-bind="text: directions"></h3>
+				</li>
+				<li class="info-data description-data" data-bind="if: description">
+					<h3 class="info-data" data-bind="text: description"></h3>
+				</li>
+			</ul>
+		</div>
+	</script>
+
 
 	<script src="js/lib/knockout-3.4.0.js"></script>
 	<script src="js/lib/jquery-1.12.4.min.js"></script>

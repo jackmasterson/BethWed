@@ -34,7 +34,8 @@ var model = {
 			description: "We met at a New Year's Eve party in Boston. "+
 				"We can't think of anything more fun than ringing in 2017 "+
 				"with our family and friends. We hope you can join us!",
-			scroll: ko.observable(false)
+			scroll: ko.observable(false),
+			ulClass: 'info'
 		},
 		{
 			header: "The Ceremony",
@@ -44,7 +45,8 @@ var model = {
 			src: "img/marks.jpg",
 			directions: "Sea Girt, NJ 08750",
 			description: ko.observable(false),
-			scroll: ko.observable(false)
+			scroll: ko.observable(false),
+			ulClass: 'info'
 		},
 		{
 			header: "The Reception",
@@ -55,7 +57,8 @@ var model = {
 			address: "3900 River Road",
 			directions: "Point Pleasant Beach, NJ 08742",
 			src: "img/reception.jpg",
-			scroll: ko.observable(false)/*,
+			scroll: ko.observable(false),
+			ulClass: 'info'/*,
 			directions: {
 				text: "Directions",
 				href: "https://www.google.com/maps/dir/"+
@@ -66,65 +69,100 @@ var model = {
 					"89c18682b7849b41:0x9fe4461d1758c521!2m2!1d-74.0869757"+
 					"!2d40.0954926"
 				}*/
-		}
+		},
 	],
-	accommodationsInfo: 
-		[
+	whereToStay:[
 			{
-				name: "Essex Hotel",
-				number: "(908) 908 9089",
-				location: "Sea Girt, NJ 08750",
-				map: "google.com/maps",
-				site: "https://jack-masterson.com",
-				hotel: ko.observable(true),
-				airport: ko.observable(false)
+				header: "Crystal Point Inn",
+				time: "3900 River Road",
+				location: "Point Pleasant, NJ",
+				address: "There is a motel onsite at the reception venue, the Crystal Point Inn. This is an affordable and convenient option, just a quick walk across the parking lot.",
+				description: "To reserve a room, please contact the Crystal Point Inn directly at (732) 899-3444 to access the wedding block.",
+				directions: ko.observable(false),
+				src: ko.observable(false),
+				scroll: ko.observable(false),
+				ulClass: 'stay'
 			},
 			{
-				name: "Sussex Hotel",
-				number: "(809) 809 9809",
-				location: "Spring Lake, NJ 07762",
-				map: "google.com/maps",
-				site: "https://jack-masterson.com",
-				hotel: ko.observable(true),
-				airport: ko.observable(false)
+				header: "Chateau Inn and Suites",
+				time: "500 Warren Avenue",
+				location: "Spring Lake, NJ",
+				address: "The Chateau in Spring Lake is just a short walk from the beach and boardwalk, as well as from the charming Third Avenue shops, boutiques, antique stores, galleries and restaurants. It features a mix of guest rooms, suites and parlors.",
+				description: "Room block information to come.",
+				directions: ko.observable(false),
+				src: ko.observable(false),
+				scroll: ko.observable(false),
+				ulClass: 'stay'
 			},
 			{
-				name: "Morrison Hotel",
-				number: "(433) 908 43333",
-				location: "Avon, NJ 07762",
-				map: "google.com/maps",
-				site: "https://jack-masterson.com",
-				hotel: ko.observable(true),
-				airport: ko.observable(false)
+				header: "The Breakers on the Ocean",
+				time: "1507 Ocean Avenue",
+				location: "Spring Lake, NJ",
+				address: "The Breakers is a historic hotel located steps from Spring Lake's two mile-long oceanfront and is walking distance to Spring Lake town.",
+				description: ko.observable(false),
+				directions: ko.observable(false),
+				src: ko.observable(false),
+				scroll: ko.observable(false),
+				ulClass: 'stay'
 			},
 			{
-				name: "JFK",
-				number: "(657) 567 6049",
-				location: "NYC",
-				map: "google.com/maps",
-				site: "https://jack-masterson.com",
-				hotel: ko.observable(false),
-				airport: ko.observable(true)
-			},
-			{
-				name: "LGA",
-				number: "(254) 674 9304",
-				location: "NYC",
-				map: "google.com/maps",
-				site: "https://jack-masterson.com",
-				hotel: ko.observable(false),
-				airport: ko.observable(true)
-			},
-			{
-				name: "Philadelphia",
-				number: "(654) 439 5679",
-				location: "Philadelphia ",
-				map: "google.com/maps",
-				site: "https://jack-masterson.com",
-				hotel: ko.observable(false),
-				airport: ko.observable(true)
+				header: "Airbnb",
+				time: ko.observable(false),
+				location: '',
+				address: "Since the Jersey Shore is full of summer residents and beach houses, Airbnb is a great choice for stays during the winter season. Local towns include Sea Girt (where the ceremony will take place), Point Pleasant (where the reception will take place), Spring Lake and Manasquan.",
+				description: ko.observable(false),
+				directions: ko.observable(false),
+				src: ko.observable(false),
+				scroll: ko.observable(false),
+				ulClass: 'stay'
 			}
-		],
+	],
+	howToGetThere: [
+			{
+				header: "Newark Airport (EWR)",
+				time: "Approximately a 45 minute drive",
+				location: "Connects to NJ Transit",
+				address: "",
+				description: "",
+				directions: ko.observable(false),
+				src: ko.observable(false),
+				scroll: ko.observable(false),
+				ulClass: 'travel'
+			},
+			{
+				header: "Atlantic City International Airport (ACY)",
+				time: "Approximately a 60 minute drive",
+				location: "Spirit Airlines Only",
+				address: "",
+				description: "",
+				directions: ko.observable(false),
+				src: ko.observable(false),
+				scroll: ko.observable(false),
+				ulClass: 'travel'
+			},			
+			{
+				header: "Philadelphia International Airport",
+				time: "Approximately a 75 minute drive",
+				location: "",
+				address: "",
+				description: "",
+				directions: ko.observable(false),
+				src: ko.observable(false),
+				scroll: ko.observable(false),
+				ulClass: 'travel'
+			},			
+			{
+				header: "Trains From New York City Area",
+				location: "NJ Transit - North Jersey Coast Line to Spring Lake Station",
+				time: "",
+				address: "",
+				description: "",
+				directions: ko.observable(false),
+				src: ko.observable(false),
+				scroll: ko.observable(false),
+				ulClass: 'travel'
+			}
+	],
 	thingsInfo: [
 		{
 			header: 'Things',
@@ -219,8 +257,11 @@ var counter = {
 
 var toggle = {
 	nav: function(clicked) {
+		console.log(clicked.divID);
 		var classed = "." + clicked.divID;
+		$('.hide').hide();
 		$('.all').hide();
+		$(classed).show();
 		$('.rest').show();
 		if(classed === '.home'){
 			$('.rest').hide();
