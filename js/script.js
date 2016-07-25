@@ -119,10 +119,10 @@ var model = {
 	],
 	howToGetThere: [
 			{
-				header: "Newark Airport (EWR)",
-				time: "Approximately a 45 minute drive",
-				location: "Connects to NJ Transit",
-				address: "",
+				header: "Closest Airports",
+				time: "Newark Liberty Airport (EWR)",
+				location: "Approximately a 45 minute drive",
+				address: "Connects to NJ Transit",
 				description: "",
 				directions: ko.observable(false),
 				src: ko.observable(false),
@@ -130,10 +130,10 @@ var model = {
 				ulClass: 'travel'
 			},
 			{
-				header: "Atlantic City International Airport (ACY)",
-				time: "Approximately a 60 minute drive",
-				location: "Spirit Airlines Only",
-				address: "",
+				header: "",
+				time: "Atlantic City International Airport (ACY)",
+				location: "Approximately a 60 minute drive",
+				address: "Spirit Airlines Only",
 				description: "",
 				directions: ko.observable(false),
 				src: ko.observable(false),
@@ -141,9 +141,9 @@ var model = {
 				ulClass: 'travel'
 			},			
 			{
-				header: "Philadelphia International Airport",
-				time: "Approximately a 75 minute drive",
-				location: "",
+				header: "",
+				time: "Philadelphia International Airport",
+				location: "Approximately a 75 minute drive",
 				address: "",
 				description: "",
 				directions: ko.observable(false),
