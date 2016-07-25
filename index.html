@@ -29,25 +29,6 @@
 			<div data-bind="template: { name: 'info-template', foreach: model.weddingInfo }"></div>
 			<div data-bind="template: { name: 'info-template', foreach: model.whereToStay }"></div>
 			<div data-bind="template: { name: 'info-template', foreach: model.howToGetThere }"></div>
-
-			<div>
-				<ul class="small-nav all">
-				</ul>
-				<div class="accom-div" data-bind="foreach: model.accommodationsInfo">
-				</div>
-				<div data-bind="foreach: model.thingsInfo" class="all things">
-					<ul class="all info-each things">
-						<li class="info-header" data-bind="text: header"></li>
-						<li class="info-data" data-bind="text: location"></li>
-						<li class="info-data" data-bind="text: address"></li>
-						<li data-bind="if: directions">
-							<h3 class="info-data">
-								<a target="_blank" data-bind="attr: {href: directions.href}, text: directions.text"></a>
-							</h3>
-						</li>
-					</ul>
-				</div>
-			</div>
 		</div>
 	</div>
 

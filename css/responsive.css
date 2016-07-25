@@ -1,8 +1,66 @@
-@media only screen and (min-device-width: 715px) and (max-device-width: 850px){
-	
-	.pic-main {
-		height: 650px;
-		width: 450px;
+/*handheld devices, portrait */
+
+@media only screen and (min-device-width: 315px) and (max-device-width: 750px) {
+	.couple {
+		font-size: 35px;
+		letter-spacing: 0;
 	}
+
+	.pic-main {
+		height: 250px;
+		width: 225px;
+	}
+
+	.nav-li {
+		font-size: 15px;
+		padding-top: 0;
+		margin: 0 8px 0 8px;
+		padding-bottom: 0;
+	}
+
+	.nav-ul {
+		margin-bottom: 55px;
+		padding-bottom: 15px;
+	}
+
+	.hide {
+		margin: 25px;
+		padding: 0;
+	}
+
+	.small-nav-img {
+		height: 200px;
+		width: 200px;
+	}
+
+	.rest {
+		height: 300vh;
+		overflow-y: scroll;
+	}
+
+	.white {
+		height: 300vh;
+		overflow-y: scroll;
+	}
+
+	.splash {
+		overflow-y: scroll;
+	}
+
+	.all {
+		overflow-y: scroll;
+	}
+
+	.home {
+		overflow-y: scroll;
+	}
+
+	.counter-head {
+		padding-bottom: 15vh;
+	}
+}
+
+@media only screen and (min-width: 750px) and (max-width: 850px) {
+
 
 }
