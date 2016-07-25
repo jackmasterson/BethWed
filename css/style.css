@@ -3,6 +3,7 @@
 	vertical-align: middle;
 	margin: 0;
 	color: white;
+	font-family: 'Poiret One', cursive;
 }
  
 ul {
@@ -18,9 +19,6 @@ a:hover {
 	color: gold;
 }
 
-h1 {
-	font-family: 'League Script', cursive;
-}
 
 .splash {
 	height: 100vh;
@@ -46,11 +44,11 @@ h1 {
 
 .counter-head {
 	margin-bottom: 5v;
-	font-family: 'Mystery Quest', cursive;
 }
 
 .pic-main {
-	height: 63vh;
+	height: 57vh;
+	margin-top: 5vh;
 	width: 35vw;
 	border: 1px solid black;
 }
@@ -58,13 +56,11 @@ h1 {
 .info-data {
 	font-size: 20px;
 	font-weight: lighter;
-	font-family: Open Sans;
 		
 }
 
 .info-header {
 	font-size: 30px;
-	font-family: 'Mystery Quest', cursive;
 }
 
 .smaller-header {
@@ -82,7 +78,6 @@ h1 {
 
 .description-data {
 	padding: 0 20px 0 20px;
-	font-family: Open Sans;
 }
 
 .inline {
@@ -97,7 +92,6 @@ h1 {
 	height: 7vh;
 	width: 100vw;
 	color: black;
-	font-family: 'Petit Formal Script', cursive;
 	background-color: rgba(255,255,255,0.7);
 
 }
@@ -144,7 +138,6 @@ h1 {
 
 .small-nav-head {
 	display: inline-block;
-	font-family: 'Mystery Quest', cursive;
 	padding: 3vh;
 	font-size: 20px;
 	cursor: pointer;

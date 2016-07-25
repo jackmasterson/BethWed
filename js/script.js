@@ -44,7 +44,7 @@ var model = {
 		},
 		{
 			header: "The Reception",
-			time: "7:00pm",
+			time: "",
 			description: "The Crystal Point is a 15-minute drive "+
 				"from St. Mark's Church.",
 			location: "Crystal Point Yacht Club",
