@@ -11,8 +11,12 @@ var model = {
 			divID: "info"
 		}, 
 		{
-			headers: "Accommodations",
-			divID: "small-nav"
+			headers: "Where to Stay",
+			divID: "stay"
+		},
+		{
+			headers: "How to Get Here",
+			divID: "travel"
 		},
 		{
 			headers: "Things to Do",

@@ -46,6 +46,10 @@ a:hover {
 	margin-bottom: 5v;
 }
 
+.date {
+	margin-bottom: 1vh;
+}
+
 .pic-main {
 	height: 57vh;
 	margin-top: 5vh;
