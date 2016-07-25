@@ -41,7 +41,7 @@ var model = {
 			header: "The Ceremony",
 			time: "2:00pm",
 			location: "St. Mark's Catholic Church",
-			address: "215 Crescent Parkway, Sea Girt, NJ 08750",
+			address: "215 Crescent Parkway",
 			src: "img/marks.jpg",
 			directions: "Sea Girt, NJ 08750",
 			description: ko.observable(false),
