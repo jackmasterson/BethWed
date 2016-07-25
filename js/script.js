@@ -30,7 +30,7 @@ var model = {
 			description: "We met at a New Year's Eve party in Boston. "+
 				"We can't think of anything more fun than ringing in 2017 "+
 				"with our family and friends. We hope you can join us!",
-			scroll: "Scroll Down for More Info!"
+			scroll: ko.observable(false)
 		},
 		{
 			header: "The Ceremony",
@@ -46,8 +46,7 @@ var model = {
 			header: "The Reception",
 			time: "7:00pm",
 			description: "The Crystal Point is a 15-minute drive "+
-				"from St. Mark's Church. Even in winter, the Jersey Shore "+
-				"has plenty of things to do between the ceremony and reception.",
+				"from St. Mark's Church.",
 			location: "Crystal Point Yacht Club",
 			address: "3900 River Road",
 			directions: "Point Pleasant Beach, NJ 08742",
