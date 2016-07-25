@@ -17,11 +17,11 @@ var model = {
 		{
 			headers: "How to Get Here",
 			divID: "travel"
-		},
+		}/*,
 		{
 			headers: "Things to Do",
 			divID: "things"
-		}
+		}*/
 	],
 	weddingInfo: [
 		{
@@ -163,7 +163,7 @@ var model = {
 				ulClass: 'travel'
 			}
 	],
-	thingsInfo: [
+	/*thingsInfo: [
 		{
 			header: 'Things',
 			location: 'December 31, 2016',
@@ -191,7 +191,7 @@ var model = {
 					"!2d40.0954926"
 				}
 		}
-	],
+	],*/
 
 	mainSect: [
 		{
