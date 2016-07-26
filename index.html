@@ -10,7 +10,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body> 
 
 
 	<div class="nav">
@@ -47,11 +47,17 @@
 				</li>
 				<li class="info-data" data-bind="text: location"></li>
 				<li class="info-data" data-bind="if: address"><span data-bind="text: address"></li>
+
 				<li data-bind="if: directions">
 					<h3 class="info-data" data-bind="text: directions"></h3>
 				</li>
 				<li class="info-data description-data" data-bind="if: description">
 					<h3 class="info-data" data-bind="text: description"></h3>
+				</li>
+								<li class="info-header" data-bind="if: scroll">
+					<h3 class="info-data">
+						<a target="_blank" data-bind="attr: {href: scroll}">Website</a>
+					</h3>
 				</li>
 			</ul>
 		</div>

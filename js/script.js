@@ -79,8 +79,8 @@ var model = {
 				address: "There is a motel onsite at the reception venue, the Crystal Point Inn. This is an affordable and convenient option, just a quick walk across the parking lot.",
 				description: "To reserve a room, please contact the Crystal Point Inn directly at (732) 899-3444 to access the wedding block.",
 				directions: ko.observable(false),
+				scroll: 'http://www.thecrystalpointinn.com/',
 				src: ko.observable(false),
-				scroll: ko.observable(false),
 				ulClass: 'stay'
 			},
 			{
@@ -90,8 +90,8 @@ var model = {
 				address: "The Chateau in Spring Lake is just a short walk from the beach and boardwalk, as well as from the charming Third Avenue shops, boutiques, antique stores, galleries and restaurants. It features a mix of guest rooms, suites and parlors.",
 				description: "Room block information to come.",
 				directions: ko.observable(false),
+				scroll: 'http://www.chateauinn.com/',
 				src: ko.observable(false),
-				scroll: ko.observable(false),
 				ulClass: 'stay'
 			},
 			{
@@ -101,8 +101,8 @@ var model = {
 				address: "The Breakers is a historic hotel located steps from Spring Lake's two mile-long oceanfront and is walking distance to Spring Lake town.",
 				description: ko.observable(false),
 				directions: ko.observable(false),
+				scroll: 'http://www.breakershotel.com/',
 				src: ko.observable(false),
-				scroll: ko.observable(false),
 				ulClass: 'stay'
 			},
 			{
@@ -112,8 +112,8 @@ var model = {
 				address: "Since the Jersey Shore is full of summer residents and beach houses, Airbnb is a great choice for stays during the winter season. Local towns include Sea Girt (where the ceremony will take place), Point Pleasant (where the reception will take place), Spring Lake and Manasquan.",
 				description: ko.observable(false),
 				directions: ko.observable(false),
+				scroll: 'https://www.airbnb.com/',
 				src: ko.observable(false),
-				scroll: ko.observable(false),
 				ulClass: 'stay'
 			}
 	],
