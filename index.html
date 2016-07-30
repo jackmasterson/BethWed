@@ -3,7 +3,7 @@
 
 <head>
 	<title>Beth and Andrew</title>
-	<meta name="viewport" content = "width=device-width, initial-scale=1">
+	<meta name="viewport" content = "width=device-width, initial-scale=1"> 
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
@@ -29,6 +29,13 @@
 			<div data-bind="template: { name: 'info-template', foreach: model.weddingInfo }"></div>
 			<div data-bind="template: { name: 'info-template', foreach: model.whereToStay }"></div>
 			<div data-bind="template: { name: 'info-template', foreach: model.howToGetThere }"></div>
+			<div>
+				<ul class="hide, pics" data-bind="foreach: model.pics.pictures">
+					<li class="pics-li">
+						<img class="pics-img" data-bind="attr: {src: src}">
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 

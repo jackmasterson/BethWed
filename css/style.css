@@ -198,3 +198,15 @@ a:hover {
 	cursor: pointer;
 	color: black;
 }
+
+.pics-img {
+	height: 175px;
+	width: auto;
+	border: 2px solid white;
+	margin: 5px;
+}
+
+.pics-li {
+	display: inline;
+	padding: 15px;
+}

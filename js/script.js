@@ -17,6 +17,10 @@ var model = {
 		{
 			headers: "How to Get Here",
 			divID: "travel"
+		},		
+		{
+			headers: "Pictures of Us",
+			divID: "picUs"
 		}/*,
 		{
 			headers: "Things to Do",
@@ -224,6 +228,85 @@ var model = {
 			]
 		}	
 	],
+	pics:
+		{
+			sect: 'Pictures of Us',
+			divID: 'picUs',
+			ulClass: 'pics',
+			pictures:[
+				{
+					src: 'img/zip/photos/one.jpg',
+					width: 'normal'
+				},		{
+					src: 'img/zip/photos/two.jpg',
+					width: 'normal'
+				},		{
+					src: 'img/zip/photos/three.jpg',
+					width: 'normal'
+				},		{
+					src: 'img/zip/photos/four.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/five.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/six.jpg',
+					width: 'tall'
+				},		{
+					src: 'img/zip/photos/seven.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/eight.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/nine.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/ten.jpg',
+					width: 'thin'
+				},		{
+					src: 'img/zip/photos/eleven.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/twelve.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/thirteen.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/fourteen.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/fifteen.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/sixteen.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/seventeen.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/eighteen.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/nineteen.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/twenty.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/twenty-one.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/twenty-two.jpg',
+					width: 'wide'
+				},		{
+					src: 'img/zip/photos/twenty-three.jpg',
+					width: 'wide'
+				}
+			]
+		}
+
 
 
 };
