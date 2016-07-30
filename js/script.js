@@ -19,7 +19,7 @@ var model = {
 			divID: "travel"
 		},		
 		{
-			headers: "Pictures of Us",
+			headers: "Photos",
 			divID: "picUs"
 		}/*,
 		{
@@ -342,6 +342,7 @@ var toggle = {
 	nav: function(clicked) {
 		console.log(clicked.divID);
 		var classed = "." + clicked.divID;
+		console.log(classed);
 		$('.hide').hide();
 		$('.all').hide();
 		$(classed).show();
